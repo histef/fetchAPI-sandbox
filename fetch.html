@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fetch API Sandbox</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class='display-4 mb-4'>Fetch API Sandbox</h1>
+		<div class='d-flex'>
+			<button class='btn btn-secondary mr-4' id='getUsers'>Get Users</button>
+			<button class='btn btn-primary mr-4'id='getPost'>Get Post</button>
+		</div>
+
+		<hr>
+
+		<form action="" id="addPost">
+			<div class="form-group">
+				<input type="text" id="title" class='form-control' placeholder='Title'>
+			</div>
+			<div class="form-group">
+				<textarea id="body" placeholder='Body' class='form-control'></textarea>
+			</div>
+			<input type="submit" class='btn btn-success' value='Submit'>
+		</form>
+		<br>
+		<div id="output"></div>
+	</div>
+
+	<script src='fetchAPI.js'> /** here's where we'll fetch **/
+	</script>
+</body>
+</html>
